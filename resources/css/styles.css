@@ -1,0 +1,51 @@
+.container-wrapper{
+    width: 100%;
+}
+
+.blog-wrapper{
+    position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.nav-wrapper{
+    position: absolute;
+}
+.row-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(196, 30, 30);
+        height: 10rem;
+        width: 50%;
+        color: aliceblue;
+        margin-left: 25%;
+}
+.posts{
+    margin-left: 30px;
+    width: 50%;
+    height: 10rem;
+    margin-top: 8px;
+    background-color: rgb(108, 107, 107);
+}
+.posts button{
+    background-color: blue;
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+     align-items: center;
+
+}
+#more {display: none;}
+.form-wrapper{
+    position: fixed;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+.form-wrapper form{
+    width: 50%;
+}
+.dashboard-nav{
+    margin-right: 150px;   
+}

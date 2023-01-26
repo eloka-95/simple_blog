@@ -1,0 +1,10 @@
+. worked on layout
+. working on posts {
+    . i have created model -mcr;
+    .created a post resource route;
+    nxt = working on posts CRUD..... (STOPPED AT PART 11)
+     i have worked on post store function validation with massage
+     . didn't add form validation with javascript. 
+     youtube video i stopped at part 13.
+}
+TODO:stopped at part 14 finished redirecting to show function when a post is created.
