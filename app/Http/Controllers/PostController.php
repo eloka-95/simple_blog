@@ -24,7 +24,6 @@ class PostController extends Controller
     public function create()
     {
         return view("Pages.Articles");
-        
     }
 
     /**
@@ -35,7 +34,7 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        // !COMMENT: validating form input 
+        //COMMENT: validating form input
         $validatedData = $request->validate([
             'title' => 'required',
             'body' => 'required|min:5',
@@ -43,9 +42,10 @@ class PostController extends Controller
             'title.required' => 'title field is required.',
             'body.required' => 'body field is required.',
         ]);
-    $user = post::create($validatedData);
-    // TODO:need to add error massage..., if validation is not successful.
-    return redirect()->route("posts.show", $user->id)->with('success', 'post created successfully.');
+        $user = post::create($validatedData);
+        // TODO:need to add error massage..., if validation is not successful.
+        return redirect()->route("posts.show", $user->id)
+        ->with('success', 'post created successfully.');
     }
 
     /**

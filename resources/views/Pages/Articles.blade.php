@@ -1,6 +1,6 @@
 @extends("Pages.page_layout.mainlayout")
 @section('title')
-    Create article page 
+    Create article page
 @endsection
 
 @section("content")
@@ -22,4 +22,4 @@
         </div>
     </div>
 @endsection
-    
+
