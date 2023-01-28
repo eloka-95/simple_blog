@@ -3,6 +3,8 @@
 use App\Http\Controllers\pagesController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
+use App\Models\Post;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,7 +30,9 @@ Route::controller(pagesController::class)->group(function(){
 Route::resource('posts', PostController::class);
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+
+    $posts = Post::all();
+    return view('dashboard',compact('posts'));
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 require __DIR__.'/auth.php';
